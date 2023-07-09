@@ -1,0 +1,12 @@
+CatalogTypeName,CatalogBrandName,Description,Name,Price,PictureFileName,avaliablestock,onreorder
+T-Shirt,.NET,".NET Black & White Mug",Catalog Name 1,19.5,1.png,100,false
+Mug,.NET,".NET Black & White Mug",Catalog Name 2,28.5,2.png,50,true
+Sheet,Other,".NET Black & White Mug",Catalog Name 3,76.5,3.png,200,false
+T-Shirt,Other,".NET Black & White Mug",Catalog Name 4,127.0,4.png,150,false
+T-Shirt,Other,".NET Black & White Mug",Catalog Name 5,17.0,5.png,350,false
+Sheet,.NET,".NET Black & White Mug",Catalog Name 6,57.0,6.png,450,false
+Mug,.NET,".NET Black & White Mug",Catalog Name 7,87.5,7.png,40,false
+T-Shirt,Other,".NET Black & White Mug",Catalog Name 8,127.0,4.png,150,false
+T-Shirt,.NET,".NET Black & White Mug",Catalog Name 9,17.0,5.png,350,false
+Sheet,Other,".NET Black & White Mug",Catalog Name 10,57.0,6.png,450,false
+Mug,Other,".NET Black & White Mug",Catalog Name 11,87.5,7.png,40,false
