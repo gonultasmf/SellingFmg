@@ -66,9 +66,9 @@ public class EventBusRabbitMQ : BaseEventBus
             var properties = consumerChannel.CreateBasicProperties();
             properties.DeliveryMode = 2;
 
-            consumerChannel.QueueDeclare(GetSubName(eventName), true, false, false, null); // create edilmediyse create eder
+            //consumerChannel.QueueDeclare(GetSubName(eventName), true, false, false, null); // create edilmediyse create eder
 
-            consumerChannel.QueueBind(GetSubName(eventName), EventBusConfig.DefaultTopicName, eventName);
+            //consumerChannel.QueueBind(GetSubName(eventName), EventBusConfig.DefaultTopicName, eventName);
 
             consumerChannel.BasicPublish(EventBusConfig.DefaultTopicName, eventName, true, properties, body);
         });
