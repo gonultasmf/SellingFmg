@@ -15,6 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.ConfigureDbContext();
 builder.Services.Configure<CatalogSettings>(configuration.GetSection("CatalogSettings"));
+builder.Services.ConfigureConsul(builder.Configuration);
 
 var app = builder.Build();
 
@@ -39,5 +40,6 @@ app.MigrateDbContext<CatalogContext>((context, services) =>
     new CatalogContextSeed().SeedAsync(context, logger).Wait();
 
 });
+app.RegistrationWithConsul(app.Lifetime);
 
 app.Run();
