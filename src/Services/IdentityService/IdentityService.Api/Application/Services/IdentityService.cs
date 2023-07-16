@@ -17,7 +17,7 @@ public class IdentityService : IIdentityService
             new Claim(ClaimTypes.Name, "Mustafa Gönültaş"),
         };
 
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("FmgSecretKeyShouldBeLong"));
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(" "));
         var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
         var expiry = DateTime.Now.AddDays(10);
 

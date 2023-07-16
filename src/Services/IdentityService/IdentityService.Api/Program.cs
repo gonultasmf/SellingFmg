@@ -11,6 +11,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IIdentityService, IdentityService.Api.IdentityService>();
 builder.Services.ConfigureConsul(builder.Configuration);
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -26,6 +27,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.RegistrationWithConsul(app.Lifetime);
+//app.RegistrationWithConsul(app.Lifetime);
 
 app.Run();
