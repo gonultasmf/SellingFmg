@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting.Server.Features;
 using Microsoft.AspNetCore.Http.Features;
 
-namespace IdentityService.Api;
+namespace BasketService.Api;
 
 public static class ConsulRegistration
 {
@@ -33,11 +33,11 @@ public static class ConsulRegistration
         var url = new Uri(address);
         var registration = new AgentServiceRegistration()
         {
-            ID = $"IdentityService",
-            Name = "IdentityService",
+            ID = $"BasketService",
+            Name = "BasketService",
             Address = $"{url.Host}",
             Port = url.Port,
-            Tags = new[] { "Identity Service", "Identity", "Token", "JWT" }
+            Tags = new[] { "Basket Service", "Basket" }
         };
 
         logger.LogInformation("Registering with Consul");

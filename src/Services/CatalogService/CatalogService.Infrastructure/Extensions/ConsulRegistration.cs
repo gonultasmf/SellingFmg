@@ -31,7 +31,7 @@ public static class ConsulRegistration
 
         var logger = loggingFactory.CreateLogger<IApplicationBuilder>();
 
-        var feature = app.Properties["server.Feature"] as FeatureCollection;
+        var feature = app.Properties["server.Features"] as FeatureCollection;
         var addresses = feature.Get<IServerAddressesFeature>();
         var address = addresses.Addresses.FirstOrDefault();
 
