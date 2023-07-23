@@ -11,7 +11,7 @@ public class Order : BaseEntity, IAggregateRoot
     private int orderStatusId;
     public OrderStatus OrderStatus { get; private set; }
     private readonly List<OrderItem> _orederItems;
-    public IReadOnlyCollection<OrderItem> Orders => _orederItems;
+    public IReadOnlyCollection<OrderItem> OrderItems => _orederItems;
     public Guid? PaymentMethodId { get; set; }
 
     public Order()
